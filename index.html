@@ -306,30 +306,29 @@
 </html>
 
 <!-- Modal subscribe -->
-<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title text-primary" id="exampleModalLongTitle">For News, Deals and Programming Tips</h5>
-                <button type="button" class="close text-danger" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <form>
-                <div class="modal-body">
-                    <input type="hidden" name="_token" value="{{csrf_token()}}">
-                    <div class="form-group">
-                        <label for="email">E-Mail Address</label>
-
-                        <input id="email" type="email" class="form-control" name="email" value="" placeholder="example@domain.com" required>
-                    </div>
-
-                </div>
-                <div class="modal-footer">
-                    <button id="subscribers" type="button" class="btn btn-outline-primary mr-auto">Subscribe</button>
-                    <button type="button" class="btn btn-outline-danger" data-dismiss="modal">Close</button>
-                </div>
-            </form>
-            </div>
+<div class="modal fade custom-modal" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered custom-dialog" role="document">
+      <div class="modal-content custom-content">
+        <div class="modal-header custom-header">
+          <h5 class="modal-title custom-title" id="exampleModalLongTitle">Stay Updated with News & Tips</h5>
+          <button type="button" class="close custom-close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
         </div>
+        <form>
+          <div class="modal-body custom-body">
+            <input type="hidden" name="_token" value="{{csrf_token()}}">
+            <div class="form-group">
+              <label for="email" class="custom-label">E-Mail Address</label>
+              <input id="email" type="email" class="form-control custom-input" name="email" value="" placeholder="example@domain.com" required>
+            </div>
+          </div>
+          <div class="modal-footer custom-footer">
+            <button id="subscribers" type="button" class="btn custom-btn-primary">Subscribe</button>
+            <button type="button" class="btn custom-btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </form>
+      </div>
     </div>
+  </div>
+  

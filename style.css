@@ -127,12 +127,11 @@ color: blue !important;
      opacity: 1;
      background: rgb(0,0,0,0.6);
  }
- #less:hover{
-     background: green;
-     color: #000;
-     cursor: pointer;
-     border-radius: 5px;
- }
+ #less:hover {
+  text-decoration: underline;          
+  cursor: pointer;      
+  transition: transform 0.3s ease, color 0.3s ease;
+}
  #more {
   display: none;
   transition: all 1s ease;
@@ -192,6 +191,91 @@ color: blue !important;
 #testimonials h2{
   margin-top: 20px;
 }
+/* Modal Customization */
+.custom-modal .modal-dialog {
+  max-width: 500px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.custom-content {
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.custom-header {
+  color: #000;
+  padding: 20px;
+  text-align: center;
+  border-bottom: none;
+}
+
+.custom-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.custom-close {
+  color: #fff;
+  font-size: 1.2rem;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.custom-body {
+  padding: 20px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.custom-label {
+  font-weight: bold;
+  color: #555;
+}
+
+.custom-input {
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+.custom-footer {
+  background: #f0f0f0;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.custom-btn-primary {
+  background: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.custom-btn-primary:hover {
+  background: #388e3c;
+}
+
+.custom-btn-secondary {
+  background: #e57373;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.custom-btn-secondary:hover {
+  background: #d32f2f;
+}
+
+/* Modal */
 @media(max-width: 568px) {
   #top{display: none;}
   #dynamic{font-size: 30px;}
