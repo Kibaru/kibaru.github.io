@@ -22,13 +22,14 @@ color: blue !important;
 }
 .fixed-nav .navbar {
   position: fixed;
-  background: #000 !important;
+  /* background: #000 !important; */
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)) !important;
   top: 0;
   width: 100%;
-  padding-top: 0 !important;
+  padding-top: 10px !important;
   transition: all 1s ease;
   z-index: 5 !important;
-  box-shadow: 5px 10px 18px #888888; transition: 0.1s;
+  /* box-shadow: 5px 10px 18px #888888; transition: 0.1s; */
 }
 .nav-brand{
   font-size: 30px !important;
